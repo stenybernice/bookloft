@@ -182,21 +182,6 @@ python scripts/verify_pipeline.py
 pytest backend/tests
 ```
 
-### 5. Start Backend Server
-```bash
-python -m uvicorn app.main:app --app-dir backend --reload --port 8000
-```
-Swagger API documentation available at: `http://localhost:8000/docs`
-
-### 6. Start Frontend Development Server
-In a new terminal window:
-```bash
-cd frontend
-npm install
-npm run dev
-```
-Open browser at: `http://localhost:5173`
-
 ---
 
 ## REST API Endpoints
