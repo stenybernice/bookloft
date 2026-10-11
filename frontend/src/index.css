@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #FFFDF9;
+    color: #1E1B1E;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Glassmorphism Cards & Badges */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(252, 231, 240, 0.8);
+}
+
+.glass-badge {
+  background: rgba(252, 231, 240, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #BE185D 0%, #DB2777 50%, #9333EA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Soft Y2K Decorative Pill Button */
+.btn-y2k {
+  background: linear-gradient(135deg, #F472B6 0%, #DB2777 100%);
+  box-shadow: 0 4px 15px -3px rgba(219, 39, 119, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-y2k:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -3px rgba(219, 39, 119, 0.4);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFDF9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FBCFE8;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #F472B6;
+}

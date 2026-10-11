@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data & Model Binaries
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+backend/artifacts/*.pkl
+backend/artifacts/*.json
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Environment Variables
+.env
+
+# Node / React
+node_modules/
+dist/
+build/
+.vite/
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
